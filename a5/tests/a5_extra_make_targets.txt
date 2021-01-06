@@ -1,0 +1,23 @@
+htest1.o: htest1.c hash.h
+	gcc -std=c99 -Wall -pedantic -c htest1.c
+
+htest1: htest1.o hash.o
+	gcc -std=c99 -Wall -pedantic -o htest1 htest1.o hash.o
+
+htest2.o: htest2.c hash.h
+	gcc -std=c99 -Wall -pedantic -c htest2.c
+
+htest2: htest2.o hash.o
+	gcc -std=c99 -Wall -pedantic -o htest2 htest2.o hash.o
+
+htest3.o: htest3.c hash.h
+	gcc -std=c99 -Wall -pedantic -c htest3.c
+
+htest3: htest3.o hash.o
+	gcc -std=c99 -Wall -pedantic -o htest3 htest3.o hash.o
+
+htest4.o: htest4.c hash.h
+	gcc -std=c99 -Wall -pedantic -c htest4.c
+
+htest4: htest4.o hash.o
+	gcc -std=c99 -Wall -pedantic -o htest4 htest4.o hash.o
