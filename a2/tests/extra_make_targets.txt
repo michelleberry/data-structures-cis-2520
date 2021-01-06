@@ -1,0 +1,53 @@
+myowntest.o: myowntest.c array.h
+	gcc -std=c99 -Wall -pedantic -c myowntest.c
+
+myowntest: myowntest.o array.o
+	gcc -std=c99 -Wall -pedantic -o myowntest myowntest.o array.o
+
+test1.o: test1.c array.h
+	gcc -std=c99 -Wall -pedantic -c test1.c
+
+test1: test1.o array.o
+	gcc -std=c99 -Wall -pedantic -o test1 test1.o array.o
+
+test2.o: test2.c array.h
+	gcc -std=c99 -Wall -pedantic -c test2.c
+
+test2: test2.o array.o
+	gcc -std=c99 -Wall -pedantic -o test2 test2.o array.o
+
+test3.o: test3.c array.h
+	gcc -std=c99 -Wall -pedantic -c test3.c
+
+test3: test3.o array.o
+	gcc -std=c99 -Wall -pedantic -o test3 test3.o array.o
+
+test4.o: test4.c array.h
+	gcc -std=c99 -Wall -pedantic -c test4.c
+
+test4: test4.o array.o
+	gcc -std=c99 -Wall -pedantic -o test4 test4.o array.o
+
+test5.o: test5.c array.h
+	gcc -std=c99 -Wall -pedantic -c test5.c
+
+test5: test5.o array.o
+	gcc -std=c99 -Wall -pedantic -o test5 test5.o array.o
+
+test6.o: test6.c array.h
+	gcc -std=c99 -Wall -pedantic -c test6.c
+
+test6: test6.o array.o
+	gcc -std=c99 -Wall -pedantic -o test6 test6.o array.o
+
+test7.o: test7.c array.h
+	gcc -std=c99 -Wall -pedantic -c test7.c
+
+test7: test7.o array.o
+	gcc -std=c99 -Wall -pedantic -o test7 test7.o array.o
+
+test8.o: test8.c array.h
+	gcc -std=c99 -Wall -pedantic -c test8.c
+
+test8: test8.o array.o
+	gcc -std=c99 -Wall -pedantic -o test8 test8.o array.o
