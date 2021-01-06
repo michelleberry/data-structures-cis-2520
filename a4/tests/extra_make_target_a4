@@ -1,0 +1,5 @@
+ttest.o: ttest.c tree.h
+	gcc -std=c99 -Wall -pedantic -c ttest.c
+
+ttest: ttest.o tree.o
+	gcc -std=c99 -Wall -pedantic -o ttest ttest.o tree.o

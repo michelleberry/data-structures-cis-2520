@@ -1,0 +1,23 @@
+mytest.o: mytest.c list.h
+	gcc -std=c99 -Wall -pedantic -c mytest.c
+
+mytest: mytest.o list.o
+	gcc -std=c99 -Wall -pedantic -o mytest mytest.o list.o
+
+test1.o: test1.c list.h
+	gcc -std=c99 -Wall -pedantic -c test1.c
+
+test1: test1.o list.o
+	gcc -std=c99 -Wall -pedantic -o test1 test1.o list.o
+
+test2.o: test2.c list.h
+	gcc -std=c99 -Wall -DLIST -pedantic -c test2.c
+
+test2: test2.o list.o
+	gcc -std=c99 -Wall -pedantic -o test2 test2.o list.o
+
+test3.o: test3.c list.h
+	gcc -std=c99 -Wall -DLIST -pedantic -c test3.c
+
+test3: test3.o list.o
+	gcc -std=c99 -Wall -pedantic -o test3 test3.o list.o
